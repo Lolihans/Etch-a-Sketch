@@ -1,27 +1,30 @@
-function createGrid(size) {
-  const elementSize = `calc(${100 / size}% - 2px)`;
-  const container = document.getElementById('container');
-  for (let row = 0; row < size; row++) {
-    for (let column = 0; column < size; column++) {
-        let square = document.createElement("div");
-        square.style.width = elementSize;
-        square.style.height = elementSize;
-        container.appendChild(square);
+/*loop for the number of divs 
+1 loop per flexbox line z.B. 16x16
+add the number as div to container div
 
-    }
-  }
+no matter how many squares, always same area occupied
+
+when hovered over a square, add color
+that stays even not hovered over it anymore
+
+ */
+
+function requestInput() {
+  let squareNumber = prompt(`How many squares do you want? (max 100)`)
+  return squareNumber
 }
 
-document.querySelectorAll("div").forEach(div => {
-    div.addEventListener("mouseover", function(event) {
-        event.target.classList.add("red");
-    });
-});
+function checkInput(squareNumber) {
+  if (Number.isInteger(squareNumber) && squareNumber < 101 && squareNumber > 0) {
+    return true
+  }
+  else {
+    alert(`Please enter a Number between 0 and 100`)
+    requestInput
+  }
 
-let number = prompt("How many rows do you want?", "16");
-let text;
-if (number == null || number == "") {
-  text = "User cancelled the prompt.";
-} else {
-  createGrid(Number(number));
+}
+
+function(squareNumber) {
+  while { squareNumber }
 }
