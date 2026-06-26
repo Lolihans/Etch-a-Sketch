@@ -12,7 +12,7 @@ that stays even not hovered over it anymore
 
 function requestInput() {
   let squareNumber = prompt(`How many squares do you want? (max 100)`)
-  return squareNumber
+  return Number(squareNumber)
 }
 
 function checkInput(squareNumber) {
@@ -39,3 +39,12 @@ function addSquares(squareNumber) {
     }
   }
 }
+
+function runtime() {
+  squareNumber = requestInput();
+  if (checkInput(squareNumber)) {
+    addSquares(squareNumber);
+  }
+}
+
+runtime();
