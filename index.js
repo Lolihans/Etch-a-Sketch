@@ -36,7 +36,11 @@ function addSquares(squareNumber) {
 
     for (let i = 0; i < squareNumber; i++) {
       let newSquare = document.createElement("div");
+      newSquare.classList.add("square");
       row.appendChild(newSquare);
+      newSquare.addEventListener("click", function () {
+        newSquare.classList.add("color");
+      }
     }
   }
 }
