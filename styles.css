@@ -15,3 +15,7 @@
 .square {
     flex: 1;
 }
+
+.color {
+    background-color: blue;
+}

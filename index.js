@@ -39,7 +39,7 @@ function addSquares(squareNumber) {
       let newSquare = document.createElement("div");
       newSquare.classList.add("square");
       row.appendChild(newSquare);
-      newSquare.addEventListener("click", function () {
+      newSquare.addEventListener("mouseover", function () {
         newSquare.classList.add("color");
       });
     }
