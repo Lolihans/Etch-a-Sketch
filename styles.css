@@ -3,4 +3,17 @@
     height: 90vh;
     display: flex;
     gap: 0px;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 0px;
+    flex-direction: row;
+    width: ;
+    height: auto;
+}
+
+div {
+    flex: 1;
 }
