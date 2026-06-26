@@ -21,7 +21,8 @@ function checkInput(squareNumber) {
   }
   else {
     alert(`Please enter a Number between 1 and 100`)
-    requestInput
+    squareNumber = requestInput();
+    checkInput(squareNumber);
   }
 }
 
