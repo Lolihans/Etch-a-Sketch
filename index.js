@@ -10,6 +10,10 @@ that stays even not hovered over it anymore
 
  */
 
+const btn = document.querySelector("button");
+btn.onclick = () => runtime();
+
+
 function requestInput() {
   let squareNumber = prompt(`How many squares do you want? (max 100)`)
   return Number(squareNumber)
