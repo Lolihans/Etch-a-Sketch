@@ -8,12 +8,10 @@
 
 .row {
     display: flex;
-    gap: 0px;
     flex-direction: row;
-    width: ;
-    height: auto;
+    flex: 1;
 }
 
-div {
+.square {
     flex: 1;
 }

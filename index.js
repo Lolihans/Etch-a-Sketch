@@ -26,6 +26,7 @@ function checkInput(squareNumber) {
   }
 }
 
+
 function addSquares(squareNumber) {
   let container = document.getElementById("container");
   let rowNumber = squareNumber;
@@ -40,7 +41,7 @@ function addSquares(squareNumber) {
       row.appendChild(newSquare);
       newSquare.addEventListener("click", function () {
         newSquare.classList.add("color");
-      }
+      });
     }
   }
 }
