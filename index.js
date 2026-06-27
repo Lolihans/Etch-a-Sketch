@@ -11,7 +11,10 @@ that stays even not hovered over it anymore
  */
 
 const btn = document.querySelector("button");
-btn.onclick = () => runtime();
+btn.onclick = function () {
+  removeGrid();
+  runtime();
+}
 
 
 function requestInput() {
@@ -50,6 +53,13 @@ function addSquares(squareNumber) {
   }
 }
 
+function removeGrid() {
+  let container = document.getElementById("container");
+  while (container.hasChildNodes()) {
+    container.removeChild(container.children[0]);
+  }
+}
+
 function runtime() {
   squareNumber = requestInput();
   if (checkInput(squareNumber)) {
@@ -57,4 +67,4 @@ function runtime() {
   }
 }
 
-runtime();
+runtime()
